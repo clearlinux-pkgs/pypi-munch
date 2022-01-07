@@ -14,14 +14,14 @@ Requires: pypi-munch-license = %{version}-%{release}
 Requires: pypi-munch-python = %{version}-%{release}
 Requires: pypi-munch-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-BuildRequires : pluggy
+BuildRequires : pypi(pluggy)
 BuildRequires : py-python
 BuildRequires : pypi(pbr)
 BuildRequires : pypi(setuptools)
 BuildRequires : pypi(six)
 BuildRequires : pytest
 BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(virtualenv)
 
 %description
 [![Build Status](https://travis-ci.org/Infinidat/munch.svg?branch=master)](https://travis-ci.org/Infinidat/munch)
