@@ -1,5 +1,5 @@
 PKG_NAME := pypi-munch
-URL = https://files.pythonhosted.org/packages/43/a1/ec48010724eedfe2add68eb7592a0d238590e14e08b95a4ffb3c7b2f0808/munch-2.5.0.tar.gz
+URL = https://files.pythonhosted.org/packages/e1/40/5dcab397be4682839a1c669b2c24c857e59f073d691a2bcf9b14cebb054a/munch-3.0.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
