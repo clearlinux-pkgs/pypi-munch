@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-munch
-Version  : 3.0.0
-Release  : 17
-URL      : https://files.pythonhosted.org/packages/e1/40/5dcab397be4682839a1c669b2c24c857e59f073d691a2bcf9b14cebb054a/munch-3.0.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/e1/40/5dcab397be4682839a1c669b2c24c857e59f073d691a2bcf9b14cebb054a/munch-3.0.0.tar.gz
+Version  : 4.0.0
+Release  : 18
+URL      : https://files.pythonhosted.org/packages/e7/2b/45098135b5f9f13221820d90f9e0516e11a2a0f55012c13b081d202b782a/munch-4.0.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/e7/2b/45098135b5f9f13221820d90f9e0516e11a2a0f55012c13b081d202b782a/munch-4.0.0.tar.gz
 Summary  : A dot-accessible dictionary (a la JavaScript objects)
 Group    : Development/Tools
 License  : MIT
@@ -18,7 +18,6 @@ BuildRequires : buildreq-distutils3
 BuildRequires : pypi(pbr)
 BuildRequires : pypi(py)
 BuildRequires : pypi(setuptools)
-BuildRequires : pypi(six)
 BuildRequires : pypi-pluggy
 BuildRequires : pypi-pytest
 BuildRequires : pypi-tox
@@ -28,7 +27,6 @@ BuildRequires : pypi-virtualenv
 %define debug_package %{nil}
 
 %description
-[![Build Status](https://travis-ci.org/Infinidat/munch.svg?branch=master)](https://travis-ci.org/Infinidat/munch)
 [![Latest Version](https://img.shields.io/pypi/v/munch.svg)](https://pypi.python.org/pypi/munch/)
 [![Supported Python versions](https://img.shields.io/pypi/pyversions/munch.svg)](https://pypi.python.org/pypi/munch/)
 [![Downloads](https://img.shields.io/pypi/dm/munch.svg)](https://pypi.python.org/pypi/munch/)
@@ -55,17 +53,16 @@ Summary: python3 components for the pypi-munch package.
 Group: Default
 Requires: python3-core
 Provides: pypi(munch)
-Requires: pypi(six)
 
 %description python3
 python3 components for the pypi-munch package.
 
 
 %prep
-%setup -q -n munch-3.0.0
-cd %{_builddir}/munch-3.0.0
+%setup -q -n munch-4.0.0
+cd %{_builddir}/munch-4.0.0
 pushd ..
-cp -a munch-3.0.0 buildavx2
+cp -a munch-4.0.0 buildavx2
 popd
 
 %build
@@ -73,7 +70,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1684610998
+export SOURCE_DATE_EPOCH=1688411054
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
