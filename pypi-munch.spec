@@ -5,7 +5,7 @@
 #
 Name     : pypi-munch
 Version  : 4.0.0
-Release  : 18
+Release  : 19
 URL      : https://files.pythonhosted.org/packages/e7/2b/45098135b5f9f13221820d90f9e0516e11a2a0f55012c13b081d202b782a/munch-4.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/e7/2b/45098135b5f9f13221820d90f9e0516e11a2a0f55012c13b081d202b782a/munch-4.0.0.tar.gz
 Summary  : A dot-accessible dictionary (a la JavaScript objects)
